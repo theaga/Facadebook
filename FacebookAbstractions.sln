@@ -8,9 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookAbstractions.Mvc", "FacebookAbstractions.Mvc\FacebookAbstractions.Mvc.csproj", "{D2EC6B4A-1296-4074-8030-1950B2E4673C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{C0C2BDFD-A879-4B48-82AE-D525E8CC93F0}"
-	ProjectSection(SolutionItems) = preProject
-		Resources\ProductInfo.cs = Resources\ProductInfo.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

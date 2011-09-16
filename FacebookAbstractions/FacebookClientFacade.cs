@@ -11,7 +11,6 @@ namespace FacebookAbstractions
         /// <param name="baseInstance">The base instance to facade.</param>
         public FacebookClientFacade(FacebookClient baseInstance) : base(baseInstance)
         {
-            BaseInstance.Bat
         }
 
 
