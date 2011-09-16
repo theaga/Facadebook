@@ -1,9 +1,8 @@
 ﻿namespace FacebookAbstractions
 {
     /// <summary>
-    /// This class is the base class of all .NET Extension
-    /// facade classes. It can wrap any base class and has
-    /// a property that returns the base instance.
+    /// This class can be used to wrap any base class
+    /// within a facade.
     /// </summary>
     /// <remarks>
     /// Author:     Daniel Saidi [daniel.saidi@gmail.com]
