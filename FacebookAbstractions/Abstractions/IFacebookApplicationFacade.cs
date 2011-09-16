@@ -9,27 +9,17 @@ namespace FacebookAbstractions.Abstractions
     /// </summary>
     public interface IFacebookApplicationFacade
     {
-        /// <summary>
-        /// Get the current Facebook application.
-        /// </summary>
         IFacebookApplication Current { get; }
 
-        /// <summary>
-        /// Gets InnerCurrent.
-        /// </summary>
         IFacebookApplication InnerCurrent { get; }
 
 
-        /// <summary>
-        /// Set the inner application.
-        /// </summary>
-        /// <param name="getFacebookApplication">The get Facebook application.</param>
         void InnerSetApplication(Func<IFacebookApplication> getFacebookApplication);
 
-        /// <summary>
-        /// Set the inner application.
-        /// </summary>
-        /// <param name="facebookApplication">The Facebook application.</param>
         void InnerSetApplication(IFacebookApplication facebookApplication);
+
+        void SetApplication(Func<IFacebookApplication> getFacebookApplication);
+
+        void SetApplication(IFacebookApplication facebookApplication);
     }
 }
