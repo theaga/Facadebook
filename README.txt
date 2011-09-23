@@ -13,6 +13,12 @@ This is a facade library for the Facebook C# SDK, which can be found at http://f
 Use this library if you need to extend or mock the various classes in the native library, e.g. when you are unit testing your applications.
 
 
+Version handling
+================
+
+The library version will match the version of the Facebook C# SDK that it facades.
+
+
 How to get it
 =============
 
