@@ -1,8 +1,0 @@
-*_ReSharper*/
-
-*.user
-*.suo
-
-**/.git
-**/bin
-**/obj
