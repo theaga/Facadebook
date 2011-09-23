@@ -4,6 +4,9 @@ using FacebookAbstractions.Abstractions;
 
 namespace FacebookAbstractions
 {
+    /// <summary>
+    /// This class can be used as a facade for the FacebookClient class.
+    /// </summary>
     public class FacebookClientFacade : FacadeBase<FacebookClient>, IFacebookClientFacade
     {
         public FacebookClientFacade(FacebookClient baseInstance) : base(baseInstance)
