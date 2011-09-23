@@ -4,6 +4,11 @@ using FacebookAbstractions.Abstractions;
 
 namespace FacebookAbstractions
 {
+    /// <summary>
+    /// This class can be used as a facade for the FacebookApplication
+    /// class. Besides all public methods, it also provides non-static
+    /// versions of the static FacebookApplication methods.
+    /// </summary>
     public class FacebookApplicationFacade : FacadeBase<FacebookApplication>, IFacebookApplicationFacade
     {
         public FacebookApplicationFacade(FacebookApplication baseInstance) : base(baseInstance)

@@ -47,9 +47,11 @@
       <Link>Properties\ProductInfo.cs</Link>
     </Compile>
     <Compile Include="Abstractions\IFacebookApplicationFacade.cs" />
+    <Compile Include="Abstractions\IFacebookClientFacade.cs" />
     <Compile Include="FacebookClientFacade.cs" />
     <Compile Include="FacadeBase.cs" />
     <Compile Include="FacebookApplicationFacade.cs" />
+    <Compile Include="FacebookOAuthClientFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
