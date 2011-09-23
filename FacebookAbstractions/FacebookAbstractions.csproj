@@ -46,18 +46,20 @@
     <Compile Include="..\Resources\ProductInfo.cs">
       <Link>Properties\ProductInfo.cs</Link>
     </Compile>
-    <Compile Include="Abstractions\IFacebookApplicationFacade.cs" />
-    <Compile Include="Abstractions\IFacebookClientFacade.cs" />
     <Compile Include="FacebookClientFacade.cs" />
     <Compile Include="FacadeBase.cs" />
     <Compile Include="FacebookApplicationFacade.cs" />
     <Compile Include="FacebookOAuthClientFacade.cs" />
+    <Compile Include="IFacebookApplicationFacade.cs" />
+    <Compile Include="IFacebookClientFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

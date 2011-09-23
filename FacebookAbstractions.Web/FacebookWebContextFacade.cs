@@ -1,10 +1,13 @@
 ﻿using System.Web;
 using Facebook.Web;
-using FacebookAbstractions.Web.Abstractions;
 using Facebook;
 
 namespace FacebookAbstractions.Web
 {
+    /// <summary>
+    /// This class can be used as a facade for
+    /// the native FacebookWebContext class.
+    /// </summary>
     public class FacebookWebContextFacade : FacadeBase<FacebookWebContext>, IFacebookWebContextFacade
     {
         public FacebookWebContextFacade(FacebookWebContext baseInstance) 
@@ -12,35 +15,6 @@ namespace FacebookAbstractions.Web
         {
         }
 
-        public void DeleteAuthCookie()
-        {
-            BaseInstance.DeleteAuthCookie();
-        }
-
-        public bool HasPermission(string permission)
-        {
-            return BaseInstance.HasPermission(permission);
-        }
-
-        public string[] HasPermission(params string[] permissions)
-        {
-            return BaseInstance.HasPermissions(permissions);
-        }
-
-        public bool IsAuthenticated()
-        {
-            return BaseInstance.IsAuthenticated();
-        }
-
-        public bool IsAuthorized(params string[] permissions)
-        {
-            return BaseInstance.IsAuthorized(permissions);
-        }
-
-        public bool IsAuthorized()
-        {
-            return BaseInstance.IsAuthorized();
-        }
 
         public string AccessToken {
             get { return BaseInstance.AccessToken; }
@@ -78,6 +52,37 @@ namespace FacebookAbstractions.Web
         public long UserId
         {
             get { return BaseInstance.UserId; }
+        }
+
+
+        public void DeleteAuthCookie()
+        {
+            BaseInstance.DeleteAuthCookie();
+        }
+
+        public bool HasPermission(string permission)
+        {
+            return BaseInstance.HasPermission(permission);
+        }
+
+        public string[] HasPermission(params string[] permissions)
+        {
+            return BaseInstance.HasPermissions(permissions);
+        }
+
+        public bool IsAuthenticated()
+        {
+            return BaseInstance.IsAuthenticated();
+        }
+
+        public bool IsAuthorized()
+        {
+            return BaseInstance.IsAuthorized();
+        }
+
+        public bool IsAuthorized(params string[] permissions)
+        {
+            return BaseInstance.IsAuthorized(permissions);
         }
     }
 }

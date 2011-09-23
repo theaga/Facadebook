@@ -1,16 +1,20 @@
 ﻿using System.Web;
 using Facebook;
 using Facebook.Web;
-using FacebookAbstractions.Web.Abstractions;
 
 namespace FacebookAbstractions.Web
 {
+    /// <summary>
+    /// This class can be used as a facade for
+    /// the native FacebookSubscription class.
+    /// </summary>
     public class FacebookSubscriptionContextFacade : FacadeBase<FacebookSubscriptionContext>, IFacebookSubscriptionContextFacade
     {
         public FacebookSubscriptionContextFacade(FacebookSubscriptionContext baseInstance)
             : base(baseInstance)
         {
         }
+
 
         public IFacebookApplication FacebookApplication
         {

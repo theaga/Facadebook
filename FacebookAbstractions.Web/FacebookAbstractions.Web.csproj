@@ -31,7 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Facebook, Version=5.1.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL" />
+    <Reference Include="Facebook, Version=5.1.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.5.1.1.0\lib\net40-client\Facebook.dll</HintPath>
+    </Reference>
     <Reference Include="Facebook.Web">
       <HintPath>..\packages\FacebookWeb.5.1.1.0\lib\net40\Facebook.Web.dll</HintPath>
     </Reference>
@@ -48,14 +50,18 @@
     <Compile Include="..\Resources\ProductInfo.cs">
       <Link>Properties\ProductInfo.cs</Link>
     </Compile>
-    <Compile Include="Abstractions\IFacebookSubscriptionContextFacade.cs" />
+    <Compile Include="CanvasUrlBuilderFacade.cs" />
+    <Compile Include="CanvasAuthorizerFacade.cs" />
+    <Compile Include="ICanvasAuthorizerFacade.cs" />
+    <Compile Include="ICanvasUrlBuilderFacade.cs" />
     <Compile Include="FacebookSubscriptionContextFacade.cs" />
     <Compile Include="FacebookWebAuthorizerFacade.cs" />
     <Compile Include="FacebookWebClientFacade.cs" />
     <Compile Include="FacebookWebContextFacade.cs" />
-    <Compile Include="Abstractions\IFacebookWebContextFacade.cs" />
-    <Compile Include="Abstractions\IFacebookWebClientFacade.cs" />
-    <Compile Include="Abstractions\IFacebookWebAuthorizerFacade.cs" />
+    <Compile Include="IFacebookSubscriptionContextFacade.cs" />
+    <Compile Include="IFacebookWebAuthorizerFacade.cs" />
+    <Compile Include="IFacebookWebClientFacade.cs" />
+    <Compile Include="IFacebookWebContextFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +69,9 @@
       <Project>{0098DDD1-1755-4BC7-83B3-35D89657B0D7}</Project>
       <Name>FacebookAbstractions</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

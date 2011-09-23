@@ -1,9 +1,13 @@
-﻿using Facebook;
+﻿using System;
+using Facebook;
 using Facebook.Web;
-using FacebookAbstractions.Web.Abstractions;
 
 namespace FacebookAbstractions.Web
 {
+    /// <summary>
+    /// This class can be used as a facade for
+    /// the native FacebookWebAuthorizer class.
+    /// </summary>
     public class FacebookWebAuthorizerFacade : FacadeBase<FacebookWebAuthorizer>, IFacebookWebAuthorizerFacade
     {
         public FacebookWebAuthorizerFacade(FacebookWebAuthorizer baseInstance) 
@@ -11,15 +15,6 @@ namespace FacebookAbstractions.Web
         {
         }
 
-        public bool Authorize()
-        {
-            return BaseInstance.Authorize();
-        }
-
-        public void HandleUnauthorizedRequest()
-        {
-            BaseInstance.HandleUnauthorizedRequest();
-        }
 
         public string CancelUrlPath
         {
@@ -50,6 +45,7 @@ namespace FacebookAbstractions.Web
             set { BaseInstance.ReturnUrlPath = value; }
         }
 
+        [Obsolete("Use FacebookWebRequest.Session instead.")]
         public FacebookSession Session
         {
             get { return BaseInstance.Session; }
@@ -59,6 +55,17 @@ namespace FacebookAbstractions.Web
         {
             get { return BaseInstance.State; }
             set { BaseInstance.State = value; }
+        }
+
+
+        public bool Authorize()
+        {
+            return BaseInstance.Authorize();
+        }
+
+        public void HandleUnauthorizedRequest()
+        {
+            BaseInstance.HandleUnauthorizedRequest();
         }
     }
 }

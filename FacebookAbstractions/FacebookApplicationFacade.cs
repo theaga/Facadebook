@@ -1,6 +1,5 @@
 ﻿using System;
 using Facebook;
-using FacebookAbstractions.Abstractions;
 
 namespace FacebookAbstractions
 {

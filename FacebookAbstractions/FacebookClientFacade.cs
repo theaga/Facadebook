@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Facebook;
-using FacebookAbstractions.Abstractions;
 
 namespace FacebookAbstractions
 {
