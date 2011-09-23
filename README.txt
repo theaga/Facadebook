@@ -1,5 +1,7 @@
-<a href="http://facadebook.com">Facadebook</a> - Facebook C# API abstractions</h1>
+Facadebook - Facebook C# API abstractions
 
-<h2>This is a small abstractions layer for the C# Facebook API</h2>
+This is a small abstractions layer for the C# Facebook API
 
-<p>Moreinfo coming soon...</p>
+More info coming soon...
+
+https://github.com/danielsaidi/Facadebook
