@@ -7,7 +7,7 @@ using System.Reflection;
 [assembly: AssemblyProduct("Facadebook")]
 [assembly: AssemblyCopyright("Copyright © Daniel Saidi, Ludvig Dickman 2011")]
 [assembly: AssemblyTrademark("")]
-
+ 
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version
