@@ -23,7 +23,7 @@ footer span a { color:#777; }
 
 .button { float:left; }
 .nuget-text { font-size:1.2em; text-align:right; padding-top:3px;}
-.icons img + .separator { display:inline-block; width:1px; margin:0 35px; background:#ccd1de; border-right:solid 1px white; height:35px;}
+.icons a + .separator { display:inline-block; width:1px; margin:0 35px; background:#ccd1de; border-right:solid 1px white; height:35px;}
 .form { position:relative; display:inline-block; }
 .form > div { top:-30px; position:absolute; }
 .likes > div { float:left; }
