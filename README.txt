@@ -2,8 +2,8 @@ Facadebook C# SDK
 =================
 
 Authors: Daniel Saidi & Ludvig Dickman
-Website: https://danielsaidi.github.com/Facadebook
-Project: https://github.com/danielsaidi/Facadebook
+Website: http://danielsaidi.github.com/Facadebook
+Project: http://github.com/danielsaidi/Facadebook
 
 
 About
