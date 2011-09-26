@@ -8,7 +8,7 @@ h2 { font-size:2.4em; margin-bottom:0px; }
 h2 + p { font-size:1.9em; margin-top:0px; line-height:1.4em; margin-bottom:30px; }
 hr { height:0px; border:none; border-top:solid 1px #ccd1de; border-bottom:solid 1px white; margin:20px 0; }
 
-.content { width:700px; margin:0 auto; }
+.content { width:800px; margin:0 auto; }
 
 header, footer, nav { display:block; }
 header { background:#3b5998; color:white; padding-top:40px; padding-bottom:10px; }
