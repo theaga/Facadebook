@@ -12,7 +12,7 @@ hr { height:0px; border:none; border-top:solid 1px #ccd1de; border-bottom:solid 
 
 header, footer, nav { display:block; }
 header { background:#3b5998; color:white; padding-top:40px; padding-bottom:10px; }
-#main { padding:50px 0 30px 0; background:url(img/bg-body.png) bottom repeat-x; }
+#main { padding:50px 20px 30px 20px; background:url(img/bg-body.png) bottom repeat-x; }
 #main .content { display:table; }
 #main .content > aside { width:250px; display:table-cell; background:url(img/icon.png) no-repeat; }
 #main .content > div { width:550px; display:table-cell; } 
