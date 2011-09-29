@@ -5,6 +5,12 @@ Authors:	Daniel Saidi & Ludvig Dickman
 Website:	https://github.com/danielsaidi/Facadebook
 
 
+5.2.1.3    2011-09-29
+=====================
+
+Updated the Facebook libraries since we accidentaly used the old
+5.1.1.0 ones. Ooooops, to say the least.
+
 
 5.2.1.0    2011-09-23
 =====================
