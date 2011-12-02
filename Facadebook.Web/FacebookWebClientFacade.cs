@@ -3,8 +3,8 @@ using Facebook.Web;
 namespace Facadebook.Web
 {
     /// <summary>
-    /// This class can be used as a facade
-    /// for the native FacebookWebClient class.
+    /// This class can be used as a facade for the
+    /// native FacebookWebClient class.
     /// </summary>
     public class FacebookWebClientFacade : FacebookClientFacade, IFacebookWebClientFacade
     {

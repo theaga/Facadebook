@@ -5,8 +5,8 @@ using Facebook;
 namespace Facadebook.Web
 {
     /// <summary>
-    /// This class can be used as a facade for
-    /// the native FacebookWebContext class.
+    /// This class can be used as a facade for the
+    /// native FacebookWebContext class.
     /// </summary>
     public class FacebookWebContextFacade : FacadeBase<FacebookWebContext>, IFacebookWebContextFacade
     {

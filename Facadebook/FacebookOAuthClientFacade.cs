@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using Facebook;
 
 namespace Facadebook
@@ -13,6 +14,19 @@ namespace Facadebook
     {
         public FacebookOAuthClientFacade(FacebookOAuthClient baseInstance) : base(baseInstance)
         {
+        }
+
+
+        public string AppId
+        {
+            get { return BaseInstance.AppId; }
+            set { BaseInstance.AppId = value; }
+        }
+
+        public string AppSecret
+        {
+            get { return BaseInstance.AppSecret; }
+            set { BaseInstance.AppSecret = value; }
         }
 
 
@@ -41,6 +55,21 @@ namespace Facadebook
             BaseInstance.ExchangeCodeForAccessTokenAsync(code, parameters, userToken);
         }
 
+        public void ExchangeCodeForAccessTokenTaskAsync(string code)
+        {
+            BaseInstance.ExchangeCodeForAccessTokenTaskAsync(code);
+        }
+
+        public void ExchangeCodeForAccessTokenTaskAsync(string code, IDictionary<string, object> parameters)
+        {
+            BaseInstance.ExchangeCodeForAccessTokenTaskAsync(code, parameters);
+        }
+
+        public void ExchangeCodeForAccessTokenTaskAsync(string code, IDictionary<string, object> parameters, CancellationToken cancellationToken)
+        {
+            BaseInstance.ExchangeCodeForAccessTokenTaskAsync(code, parameters, cancellationToken);
+        }
+
         public object GetApplicationAccessToken()
         {
             return BaseInstance.GetApplicationAccessToken();
@@ -64,6 +93,16 @@ namespace Facadebook
         public void GetApplicationAccessTokenAsync(IDictionary<string, object> parameters, object userToken)
         {
             BaseInstance.GetApplicationAccessTokenAsync(parameters, userToken);
+        }
+
+        public void GetApplicationAccessTokenTaskAsync()
+        {
+            BaseInstance.GetApplicationAccessTokenTaskAsync();
+        }
+
+        public void GetApplicationAccessTokenTaskAsync(IDictionary<string, object> parameters, CancellationToken cancellationToken)
+        {
+            BaseInstance.GetApplicationAccessTokenTaskAsync(parameters, cancellationToken);
         }
 
         public Uri GetLoginUrl()

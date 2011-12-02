@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using Facebook;
 
 namespace Facadebook
@@ -41,6 +43,21 @@ namespace Facadebook
             BaseInstance.BatchAsync(batchParameters, userToken);
         }
 
+        public Task<object> BatchTaskAsync(FacebookBatchParameter[] batchParameters)
+        {
+            return BaseInstance.BatchTaskAsync(batchParameters);
+        }
+
+        public Task<object> BatchTaskAsync(FacebookBatchParameter[] batchParameters, CancellationToken cancellationToken)
+        {
+            return BaseInstance.BatchTaskAsync(batchParameters, cancellationToken);
+        }
+
+        public Task<object> BatchTaskAsync(FacebookBatchParameter[] batchParameters, object userToken, CancellationToken cancellationToken)
+        {
+            return BaseInstance.BatchTaskAsync(batchParameters, userToken, cancellationToken);
+        }
+
         public void CancelAsync()
         {
             BaseInstance.CancelAsync();
@@ -69,6 +86,21 @@ namespace Facadebook
         public void DeleteAsync(string path, IDictionary<string, object> parameters, string userToken)
         {
             BaseInstance.DeleteAsync(path, parameters, userToken);
+        }
+
+        public Task<object> DeleteTaskAsync(string path)
+        {
+            return BaseInstance.DeleteTaskAsync(path);
+        }
+
+        public void DeleteTaskAsync(string path, IDictionary<string, object> parameters)
+        {
+            BaseInstance.DeleteTaskAsync(path, parameters);
+        }
+
+        public void DeleteTaskAsync(string path, IDictionary<string, object> parameters, CancellationToken cancellationToken)
+        {
+            BaseInstance.DeleteTaskAsync(path, parameters, cancellationToken);
         }
 
         public object Get(string path)
@@ -121,6 +153,26 @@ namespace Facadebook
             BaseInstance.GetAsync(path, parameters, userToken);
         }
 
+        public void GetTaskAsync(string path)
+        {
+            BaseInstance.GetTaskAsync(path);
+        }
+
+        public void GetTaskAsync(IDictionary<string, object> parameters)
+        {
+            BaseInstance.GetTaskAsync(parameters);
+        }
+
+        public void GetTaskAsync(string path, IDictionary<string, object> parameters)
+        {
+            BaseInstance.GetTaskAsync(path, parameters);
+        }
+
+        public void GetTaskAsync(string path, IDictionary<string, object> parameters, CancellationToken cancellationToken)
+        {
+            BaseInstance.GetTaskAsync(path, parameters, cancellationToken);
+        }
+
         public object Post(string path)
         {
             return BaseInstance.Post(path);
@@ -166,6 +218,21 @@ namespace Facadebook
             BaseInstance.PostAsync(path, parameters, userToken);
         }
 
+        public Task<object> PostTaskAsync(IDictionary<string, object> parameters)
+        {
+            return BaseInstance.PostTaskAsync(parameters);
+        }
+
+        public void PostTaskAsync(string path, IDictionary<string, object> parameters)
+        {
+            BaseInstance.PostTaskAsync(path, parameters);
+        }
+
+        public void PostTaskAsync(string path, IDictionary<string, object> parameters, CancellationToken cancellationToken)
+        {
+            BaseInstance.PostTaskAsync(path, parameters, cancellationToken);
+        }
+
         public object Query(string fql)
         {
             return BaseInstance.Query(fql);
@@ -194,6 +261,26 @@ namespace Facadebook
         public void QueryAsync(string[] fql, object userToken)
         {
             BaseInstance.QueryAsync(fql, userToken);
+        }
+
+        public void QueryTaskAsync(string fql)
+        {
+            BaseInstance.QueryTaskAsync(fql);
+        }
+
+        public void QueryTaskAsync(string[] fql)
+        {
+            BaseInstance.QueryTaskAsync(fql);
+        }
+
+        public void QueryTaskAsync(string fql, CancellationToken cancellationToken)
+        {
+            BaseInstance.QueryTaskAsync(fql, cancellationToken);
+        }
+
+        public void QueryTaskAsync(string[] fql, CancellationToken cancellationToken)
+        {
+            BaseInstance.QueryTaskAsync(fql, cancellationToken);
         }
     }
 }

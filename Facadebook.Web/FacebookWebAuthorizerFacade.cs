@@ -5,8 +5,8 @@ using Facebook.Web;
 namespace Facadebook.Web
 {
     /// <summary>
-    /// This class can be used as a facade for
-    /// the native FacebookWebAuthorizer class.
+    /// This class can be used as a facade for the
+    /// native FacebookWebAuthorizer class.
     /// </summary>
     public class FacebookWebAuthorizerFacade : FacadeBase<FacebookWebAuthorizer>, IFacebookWebAuthorizerFacade
     {

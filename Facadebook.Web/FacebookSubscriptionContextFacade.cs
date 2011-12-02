@@ -5,8 +5,8 @@ using Facebook.Web;
 namespace Facadebook.Web
 {
     /// <summary>
-    /// This class can be used as a facade for
-    /// the native FacebookSubscription class.
+    /// This class can be used as a facade for the
+    /// native FacebookSubscription class.
     /// </summary>
     public class FacebookSubscriptionContextFacade : FacadeBase<FacebookSubscriptionContext>, IFacebookSubscriptionContextFacade
     {

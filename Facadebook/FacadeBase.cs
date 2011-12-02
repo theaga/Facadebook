@@ -6,7 +6,7 @@ namespace Facadebook
     /// </summary>
     /// <remarks>
     /// Author:     Daniel Saidi [daniel.saidi@gmail.com]
-    /// Link:       http://www.saidi.se/netextensions
+    /// Link:       http://www.dotnextra.com
     /// </remarks>
     /// <typeparam name="T">The type that is to be facaded.</typeparam>
     public class FacadeBase<T>
